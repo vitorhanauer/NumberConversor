@@ -6,6 +6,10 @@
     <RootNamespace>number_conversor</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>baseconverter</ToolCommandName>
+    <PackageId>Vitor.BaseConverter</PackageId>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
 </Project>
