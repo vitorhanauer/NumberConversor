@@ -29,4 +29,21 @@ class Binary
         }
         return valueOutput;
     }
+
+    public string toHexadecimal(string Bits)
+    {
+        string valueOutput = "";
+
+        var list = Bits.Select(c => c.ToString()).ToArray().Reverse().Chunk(4);
+        foreach(var item in list)
+        {
+            string halfByte = string.Join("", item.Reverse());
+            halfByte = new string('0', 4 - halfByte.Length) + halfByte;
+
+            valueOutput = bth[halfByte] + valueOutput;
+
+            Console.WriteLine(halfByte);
+        }
+        return valueOutput;
+    }
 }
