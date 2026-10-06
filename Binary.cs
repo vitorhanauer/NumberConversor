@@ -2,6 +2,7 @@ class Binary
 {
     private IDictionary<string, string> bth = new Dictionary<string, string>()
     {
+        {"0000", "0"},
         {"0001", "1"},
         {"0010", "2"},
         {"0011", "3"},
@@ -17,6 +18,18 @@ class Binary
         {"1101", "D"},
         {"1110", "E"},
         {"1111", "F"},
+    };
+
+    private IDictionary<string, string> bto = new Dictionary<string, string>()
+    {
+        {"000", "0"},
+        {"001", "1"},
+        {"010", "2"},
+        {"011", "3"},
+        {"100", "4"},
+        {"101", "5"},
+        {"110", "6"},
+        {"111", "7"},
     };
     public int toDecimal(string Bits)
     {
@@ -41,6 +54,19 @@ class Binary
             halfByte = new string('0', 4 - halfByte.Length) + halfByte;
 
             valueOutput = bth[halfByte] + valueOutput;
+        }
+        return valueOutput;
+    }
+    public string toOctal(string Bits)
+    {
+        string valueOutput = "";
+        var list = Bits.Select(c => c.ToString()).ToArray().Reverse().Chunk(3);
+        foreach(var item in list)
+        {
+            string octal = string.Join("", item.Reverse());
+            octal = new string('0', 3 - octal.Length) + octal;
+
+            valueOutput = bto[octal] + valueOutput;
         }
         return valueOutput;
     }

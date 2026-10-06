@@ -9,7 +9,8 @@ String valueOutput = "";
 
 // Binary Conversors
 if(inputType == "-b" && outputType == "-d") valueOutput = $"{binary.toDecimal(value)}";
-if(inputType == "-b" && outputType == "--hexa") valueOutput = binary.toHexadecimal(value);
+if(inputType == "-b" && outputType == "-x") valueOutput = binary.toHexadecimal(value);
+if(inputType == "-b" && outputType == "-o") valueOutput = binary.toOctal(value);
 
 if(inputType == "-d" && outputType == "-b") valueOutput = decimalConverter.toBinary(value);
 
