@@ -41,8 +41,6 @@ class Binary
             halfByte = new string('0', 4 - halfByte.Length) + halfByte;
 
             valueOutput = bth[halfByte] + valueOutput;
-
-            Console.WriteLine(halfByte);
         }
         return valueOutput;
     }
