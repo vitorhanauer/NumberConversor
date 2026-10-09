@@ -19,5 +19,6 @@ if(inputType == "-d" && outputType == "-o") valueOutput = decimalConverter.toOct
 
 if(inputType == "-x" && outputType == "-b") valueOutput = hexadecimalConverter.toBinary(value);
 if(inputType == "-x" && outputType == "-d") valueOutput = hexadecimalConverter.toDecimal(value);
+if(inputType == "-x" && outputType == "-o") valueOutput = hexadecimalConverter.toOctal(value);
 
 Console.WriteLine(valueOutput);

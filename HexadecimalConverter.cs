@@ -18,4 +18,10 @@ public class HexadecimalConverter
         string bits = toBinary(hexa);
         return $"{Binary.toDecimal(bits)}";
     }
+
+    public string toOctal(string hexa)
+    {
+        string bits = toBinary(hexa);
+        return Binary.toOctal(bits);
+    }
 }
