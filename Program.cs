@@ -18,5 +18,6 @@ if(inputType == "-d" && outputType == "-x") valueOutput = decimalConverter.toHex
 if(inputType == "-d" && outputType == "-o") valueOutput = decimalConverter.toOctal(value);
 
 if(inputType == "-x" && outputType == "-b") valueOutput = hexadecimalConverter.toBinary(value);
+if(inputType == "-x" && outputType == "-d") valueOutput = hexadecimalConverter.toDecimal(value);
 
 Console.WriteLine(valueOutput);

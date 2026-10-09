@@ -1,6 +1,7 @@
 public class HexadecimalConverter
 {
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
+    private Binary Binary = new();
 
     public string toBinary(string hexa)
     {
@@ -10,5 +11,11 @@ public class HexadecimalConverter
         }
 
         return valueOutput;
+    }
+
+    public string toDecimal(string hexa)
+    {
+        string bits = toBinary(hexa);
+        return $"{Binary.toDecimal(bits)}";
     }
 }
