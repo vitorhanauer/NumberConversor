@@ -1,18 +1,8 @@
 class Binary
 {
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
-
-    private IDictionary<string, string> bto = new Dictionary<string, string>()
-    {
-        {"000", "0"},
-        {"001", "1"},
-        {"010", "2"},
-        {"011", "3"},
-        {"100", "4"},
-        {"101", "5"},
-        {"110", "6"},
-        {"111", "7"},
-    };
+    private BinaryOctalDictionary BinaryOctalDictionary = new();
+    
     public int toDecimal(string Bits)
     {
         int valueOutput = 0;
@@ -49,7 +39,7 @@ class Binary
             string octal = string.Join("", item.Reverse());
             octal = new string('0', 3 - octal.Length) + octal;
 
-            valueOutput = bto[octal] + valueOutput;
+            valueOutput = BinaryOctalDictionary.getOctal(octal) + valueOutput;
         }
         return valueOutput;
     }
