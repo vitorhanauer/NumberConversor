@@ -24,5 +24,6 @@ if(inputType == "-x" && outputType == "-o") valueOutput = hexadecimalConverter.t
 
 if(inputType == "-o" && outputType == "-b") valueOutput = octalConverter.toBinary(value);
 if(inputType == "-o" && outputType == "-x") valueOutput = octalConverter.toHexadecimal(value);
+if(inputType == "-o" && outputType == "-d") valueOutput = octalConverter.toDecimal(value);
 
 Console.WriteLine(valueOutput);

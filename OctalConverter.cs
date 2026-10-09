@@ -17,4 +17,10 @@ class OctalConverter
         string bits = toBinary(octalNumber);
         return binary.toHexadecimal(bits);
     }
+
+    public string toDecimal(string octalNumber)
+    {
+        string bits = toBinary(octalNumber);
+        return $"{binary.toDecimal(bits)}";
+    }
 }
