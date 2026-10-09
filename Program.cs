@@ -5,6 +5,7 @@ String outputType = args[2];
 
 DecimalConverter decimalConverter = new();
 HexadecimalConverter hexadecimalConverter = new();
+OctalConverter octalConverter = new();
 Binary binary = new();
 String valueOutput = "";
 
@@ -20,5 +21,7 @@ if(inputType == "-d" && outputType == "-o") valueOutput = decimalConverter.toOct
 if(inputType == "-x" && outputType == "-b") valueOutput = hexadecimalConverter.toBinary(value);
 if(inputType == "-x" && outputType == "-d") valueOutput = hexadecimalConverter.toDecimal(value);
 if(inputType == "-x" && outputType == "-o") valueOutput = hexadecimalConverter.toOctal(value);
+
+if(inputType == "-o" && outputType == "-b") valueOutput = octalConverter.toBinary(value);
 
 Console.WriteLine(valueOutput);
