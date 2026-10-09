@@ -1,13 +1,20 @@
 class OctalConverter
 {
     private BinaryOctalDictionary dictionary = new();
-    public string toBinary(string octalList)
+    private Binary binary = new();
+    public string toBinary(string octalNumber)
     {
         string valueOutput = "";
-        foreach(var octal in octalList)
+        foreach(var octal in octalNumber)
         {
             valueOutput += dictionary.getBinary($"{octal}");
         }
         return valueOutput;
+    }
+
+    public string toHexadecimal(string octalNumber)
+    {
+        string bits = toBinary(octalNumber);
+        return binary.toHexadecimal(bits);
     }
 }
