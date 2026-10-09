@@ -16,4 +16,9 @@ public class BinaryOctalDictionary
     {
         return dictionary[bits];
     }
+
+    public string getBinary(string octal)
+    {
+        return this.dictionary.FirstOrDefault(o => o.Value == octal).Key;
+    }
 }
