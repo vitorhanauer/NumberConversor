@@ -3,7 +3,7 @@ class Binary
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
     private BinaryOctalDictionary BinaryOctalDictionary = new();
     
-    public int toDecimal(string Bits)
+    public string toDecimal(string Bits)
     {
         int valueOutput = 0;
         String[] list = Bits.Select(c => c.ToString()).Reverse().ToArray();
@@ -12,7 +12,7 @@ class Binary
             int digit = ((int)Math.Pow(2,i));
             valueOutput += Int16.Parse(list[i]) * digit;
         }
-        return valueOutput;
+        return $"{valueOutput}";
     }
 
     public string toHexadecimal(string Bits)

@@ -1,16 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
-String inputType = args[0];
-String value = args[1];
-String outputType = args[2];
+string inputType = args[0];
+string value = args[1];
+string outputType = args[2];
 
 DecimalConverter decimalConverter = new();
 HexadecimalConverter hexadecimalConverter = new();
 OctalConverter octalConverter = new();
 Binary binary = new();
-String valueOutput = "";
+string valueOutput = "";
 
 // Binary Conversors
-if(inputType == "-b" && outputType == "-d") valueOutput = $"{binary.toDecimal(value)}";
+if(inputType == "-b" && outputType == "-d") valueOutput = binary.toDecimal(value);
 if(inputType == "-b" && outputType == "-x") valueOutput = binary.toHexadecimal(value);
 if(inputType == "-b" && outputType == "-o") valueOutput = binary.toOctal(value);
 
