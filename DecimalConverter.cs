@@ -20,4 +20,10 @@ public class DecimalConverter
         var bits = toBinary(value);
         return this.Binary.toHexadecimal(bits);
     }
+
+    public string toOctal(string value)
+    {
+        var bits = toBinary(value);
+        return this.Binary.toOctal(bits);
+    }
 }
