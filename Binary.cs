@@ -1,24 +1,6 @@
 class Binary
 {
-    private IDictionary<string, string> bth = new Dictionary<string, string>()
-    {
-        {"0000", "0"},
-        {"0001", "1"},
-        {"0010", "2"},
-        {"0011", "3"},
-        {"0100", "4"},
-        {"0101", "5"},
-        {"0110", "6"},
-        {"0111", "7"},
-        {"1000", "8"},
-        {"1001", "9"},
-        {"1010", "A"},
-        {"1011", "B"},
-        {"1100", "C"},
-        {"1101", "D"},
-        {"1110", "E"},
-        {"1111", "F"},
-    };
+    private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
 
     private IDictionary<string, string> bto = new Dictionary<string, string>()
     {
@@ -53,7 +35,8 @@ class Binary
             string halfByte = string.Join("", item.Reverse());
             halfByte = new string('0', 4 - halfByte.Length) + halfByte;
 
-            valueOutput = bth[halfByte] + valueOutput;
+            valueOutput = BinaryHexadecimalDictionary.getHexadecimal(halfByte) + valueOutput;
+            
         }
         return valueOutput;
     }
