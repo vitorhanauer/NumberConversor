@@ -1,2 +1,5 @@
 <Solution>
+  <Folder Name="/NumberConversor.Project/">
+    <Project Path="NumberConversor.Project/number-conversor.csproj" />
+  </Folder>
 </Solution>
