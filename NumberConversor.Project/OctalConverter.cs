@@ -3,7 +3,7 @@ namespace NumberConversor.Project;
 public class OctalConverter
 {
     private BinaryOctalDictionary dictionary = new();
-    private Binary binary = new();
+    private BinaryConverter binary = new();
     public string toBinary(string octalNumber)
     {
         string valueOutput = "";

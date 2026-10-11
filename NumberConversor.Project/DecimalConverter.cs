@@ -1,7 +1,7 @@
 namespace NumberConversor.Project;
 public class DecimalConverter
 {
-    private Binary Binary = new Binary();
+    private BinaryConverter Binary = new BinaryConverter();
 
     public String toBinary(string value)
     {

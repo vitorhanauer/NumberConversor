@@ -8,7 +8,7 @@ string outputType = args[2];
 DecimalConverter decimalConverter = new();
 HexadecimalConverter hexadecimalConverter = new();
 OctalConverter octalConverter = new();
-Binary binary = new();
+BinaryConverter binary = new();
 string valueOutput = "";
 
 // Binary Conversors

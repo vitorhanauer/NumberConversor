@@ -3,7 +3,7 @@ namespace NumberConversor.Project;
 public class HexadecimalConverter
 {
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
-    private Binary Binary = new();
+    private BinaryConverter Binary = new();
 
     public string toBinary(string hexa)
     {

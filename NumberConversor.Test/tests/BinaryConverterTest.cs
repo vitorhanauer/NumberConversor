@@ -4,7 +4,7 @@ namespace NumberConversor.Test;
 
 public class BinaryConverterTest
 {
-    private Binary binaryConverter = new();
+    private BinaryConverter binaryConverter = new();
     private string binaryNumber = "1010";
 
     [Fact]
