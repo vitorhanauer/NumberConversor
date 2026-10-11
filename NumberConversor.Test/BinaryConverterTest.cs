@@ -13,4 +13,13 @@ public class BinaryConverterTest
 
         Assert.Equal(decimalNumber, binaryConverter.toDecimal(binaryNumber));
     }
+
+    public void BinaryToHexadecimal()
+    {
+        Binary binaryConverter = new();
+        string binaryNumber = "1010";
+        string hexadecimalNumber = "A";
+
+        Assert.Equal(hexadecimalNumber, binaryConverter.toHexadecimal(binaryNumber));
+    }
 }
