@@ -1,3 +1,5 @@
+namespace NumberConversor.Project;
+
 class OctalConverter
 {
     private BinaryOctalDictionary dictionary = new();

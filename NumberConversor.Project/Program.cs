@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using NumberConversor.Project;
+
 string inputType = args[0];
 string value = args[1];
 string outputType = args[2];

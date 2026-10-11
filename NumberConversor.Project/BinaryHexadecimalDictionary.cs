@@ -1,4 +1,4 @@
-using System.Text;
+namespace NumberConversor.Project;
 
 public class BinaryHexadecimalDictionary
 {

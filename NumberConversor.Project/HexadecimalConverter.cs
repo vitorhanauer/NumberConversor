@@ -1,3 +1,5 @@
+namespace NumberConversor.Project;
+
 public class HexadecimalConverter
 {
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();

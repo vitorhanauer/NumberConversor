@@ -1,3 +1,4 @@
+namespace NumberConversor.Project;
 public class DecimalConverter
 {
     private Binary Binary = new Binary();
