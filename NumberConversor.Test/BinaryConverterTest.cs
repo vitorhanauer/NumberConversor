@@ -14,6 +14,7 @@ public class BinaryConverterTest
         Assert.Equal(decimalNumber, binaryConverter.toDecimal(binaryNumber));
     }
 
+    [Fact]
     public void BinaryToHexadecimal()
     {
         Binary binaryConverter = new();
