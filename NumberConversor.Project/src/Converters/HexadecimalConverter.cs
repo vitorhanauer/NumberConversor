@@ -1,6 +1,4 @@
-using NumberConversor.Project.Converters;
-
-namespace NumberConversor.Project;
+namespace NumberConversor.Project.Converters;
 
 public class HexadecimalConverter
 {
