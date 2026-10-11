@@ -23,4 +23,14 @@ public class BinaryConverterTest
 
         Assert.Equal(hexadecimalNumber, binaryConverter.toHexadecimal(binaryNumber));
     }
+
+    [Fact]
+    public void BinaryToOctal()
+    {
+        Binary binaryConverter = new();
+        string binaryNumber = "1010";
+        string octalNumber = "12";
+
+        Assert.Equal(octalNumber, binaryConverter.toOctal(binaryNumber));
+    }
 }
