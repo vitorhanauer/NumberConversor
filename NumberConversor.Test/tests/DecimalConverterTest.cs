@@ -1,4 +1,4 @@
-using NumberConversor.Project;
+using NumberConversor.Project.Converters;
 
 namespace NumberConversor.Test;
 
