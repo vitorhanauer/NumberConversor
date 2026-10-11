@@ -1,6 +1,6 @@
 namespace NumberConversor.Project;
 
-class Binary
+public class Binary
 {
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
     private BinaryOctalDictionary BinaryOctalDictionary = new();
