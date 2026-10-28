@@ -1,7 +1,12 @@
 namespace NumberConversor.Project.Converters;
-public class DecimalConverter
+public class DecimalConverter : IConverter
 {
     private BinaryConverter Binary = new BinaryConverter();
+
+    public string toDecimal(string value)
+    {
+        return value;
+    }
 
     public String toBinary(string value)
     {
