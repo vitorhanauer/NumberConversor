@@ -1,9 +1,15 @@
 namespace NumberConversor.Project.Converters;
 
-public class OctalConverter
+public class OctalConverter : IConverter
 {
     private BinaryOctalDictionary dictionary = new();
     private BinaryConverter binary = new();
+
+    public string toOctal(string octalNumber)
+    {
+        return octalNumber;
+    }
+
     public string toBinary(string octalNumber)
     {
         string valueOutput = "";
