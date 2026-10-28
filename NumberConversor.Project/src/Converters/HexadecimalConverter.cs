@@ -1,9 +1,14 @@
 namespace NumberConversor.Project.Converters;
 
-public class HexadecimalConverter
+public class HexadecimalConverter : IConverter
 {
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
     private BinaryConverter Binary = new();
+
+    public string toHexadecimal(string hexa)
+    {
+        return hexa;
+    }
 
     public string toBinary(string hexa)
     {
