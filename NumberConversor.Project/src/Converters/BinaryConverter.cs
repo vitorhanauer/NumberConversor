@@ -1,9 +1,14 @@
 namespace NumberConversor.Project.Converters;
 
-public class BinaryConverter
+public class BinaryConverter : IConverter
 {
     private BinaryHexadecimalDictionary BinaryHexadecimalDictionary = new();
     private BinaryOctalDictionary BinaryOctalDictionary = new();
+
+    public string toBinary(string Bits)
+    {
+        return Bits;
+    }
     
     public string toDecimal(string Bits)
     {
