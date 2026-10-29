@@ -1,4 +1,4 @@
-namespace NumberConversor.Project;
+namespace NumberConversor.Project.Dictionaries;
 
 public class BinaryOctalDictionary
 {

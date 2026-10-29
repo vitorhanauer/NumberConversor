@@ -1,3 +1,5 @@
+using NumberConversor.Project.Dictionaries;
+
 namespace NumberConversor.Project.Converters;
 
 public class OctalConverter : IConverter
